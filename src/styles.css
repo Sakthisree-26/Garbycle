@@ -1,0 +1,93 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; 
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f6f3f3;
+    color: rgb(8, 8, 8);
+  }
+  
+  ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  li {
+    cursor: pointer;
+  }
+  
+  
+.login-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(202, 250, 193); 
+    color: black; 
+    border: 2px solid black; 
+    border-radius: 5px; 
+    cursor: pointer;
+  }
+  
+  .login-button:hover {
+    background-color: #f0f0f0; 
+  }
+  
+  
+  .logo {
+    height: 50px;
+    width: auto;
+  }
+  
+  .background-container {
+    background-image: url('/public/images/garbycle1.png'); 
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 80px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+.button-container {
+    text-align: center;
+    margin-top: 50px; 
+  }
+  
+  .book-button {
+    background-color: rgb(202, 250, 193);
+    color: rgb(5, 4, 4);
+    padding: 30px 60px;
+    font-size: 24px;
+    border: 5px solid rgb(6, 6, 6);
+    border-radius: 50px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+  
+   
+  }
+  
+  .book-button:hover {
+    background-color: #333;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
