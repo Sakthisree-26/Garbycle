@@ -18,6 +18,8 @@ const Navbar = () => {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About Us</Link></li>
         <li><Link to="/pricing">Pricing</Link></li>
+        <li><Link to="">Dashboard</Link></li>
+
       </ul>
       <button className="login-button" onClick={handleLoginClick}>Login</button>
     </nav>
