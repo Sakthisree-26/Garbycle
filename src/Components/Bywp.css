@@ -1,0 +1,104 @@
+/* Bywp.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .central-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .address-section {
+    margin-bottom: 20px;
+  }
+  
+  .green-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .green-button:hover {
+    background-color: #45a049;
+  }
+  
+  .modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .close-btn {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .modal-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  p {
+    margin-top: 10px;
+  }
+  /* Bywp.css */
+
+/* ... (previous styles) */
+
+.tracking-stages {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .tracking-stage {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stage-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ccc;
+  }
+  
+  .stage-text {
+    font-size: 12px;
+    color: #ccc;
+  }
+  
+  .active-stage {
+    color: #4caf50;
+  }
+  
+  

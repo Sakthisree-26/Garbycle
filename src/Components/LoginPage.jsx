@@ -1,31 +1,38 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const LoginPage = () => {
+const LoginPage = ({ setLoggedIn }) => {
   const navigate = useNavigate();
-
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
-    
     if (username && password) {
+      setLoggedIn(true);
       
-      navigate('/dashboard');
+      // Display the welcome message as an alert directly in LoginPage
+      alert('Welcome to Garbycle!');
+
+      navigate('/');
     } else {
-      
       alert('Please enter both username and password.');
     }
   };
 
   const handleCreateAccount = () => {
-    
     navigate('/create-account');
   };
-
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100vh', justifyContent: 'center' }}>
-      <div style={{ width: '300px', padding: '20px', border: '1px solid #ccc', borderRadius: '8px' }}>
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      height: '100vh',
+      justifyContent: 'center',
+      backgroundImage: 'url(/images/login.png)',
+      backgroundSize: 'cover',
+    }}>
+      <div style={{ width: '300px', padding: '20px', border: '1px solid #ccc', borderRadius: '8px', backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
         <h2>Login</h2>
         <label htmlFor="username">Username:</label>
         <input
@@ -50,4 +57,12 @@ const LoginPage = () => {
   );
 };
 
+
 export default LoginPage;
+
+
+
+
+
+
+

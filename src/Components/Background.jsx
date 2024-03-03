@@ -1,12 +1,13 @@
+// Background.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Background = () => {
+const Background = ({ isLoggedIn }) => {
   const backgroundStyles = {
-    backgroundImage: `url('/images/garbycle1.png')`, 
+    backgroundImage: `url('/images/mainwallpaper4.png')`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    height: 'calc(100vh - 80px)', 
+    height: 'calc(100vh - 80px)',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -15,7 +16,8 @@ const Background = () => {
 
   return (
     <div style={backgroundStyles}>
-      <Link to="/login"> {}
+      {/* Always render the button */}
+      <Link to="/book-your-waste-pickup">
         <button className="book-button">Book Your Waste Pickup</button>
       </Link>
     </div>
